@@ -1,0 +1,4 @@
+services:
+  - name: web
+    env: python
+    start_command: gunicorn app:app
