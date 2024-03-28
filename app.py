@@ -7,15 +7,14 @@ import random
 import json
 
 app = Flask(__name__, static_url_path='/static')
+#app.debug = False
 
 @app.route('/')
 def index():
     todays_date = datetime.datetime.now().date()
 
-    game_data= DB.get_game("2024-03-26")
-    #game_data = DB.get_game("2024-03-21")
-    #game_data = DB.get_game("2024-03-21")
-
+    game_data= DB.get_game(todays_date)
+    #game_data = DB.get_game("2024-03-29")
 
     # this is for adding new games. only uncomment when adding new game
     #AdminStuff.add_new_daily_game()

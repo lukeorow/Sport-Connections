@@ -4,32 +4,35 @@ class AdminStuff:
 
     # this is for adding new daily game to the database (scheduled by the date)
     def add_new_daily_game():
-        date = "2024-03-26" # date that the game will be stored under
+        date = "2024-03-29" # date that the game will be stored under
 
-        
-        c1_name = "2018-2019 Brooklyn Nets"
-        c1i1 = "Caris LeVert"
-        c1i2 = "D'Angelo Russell"
-        c1i3 = "Jarrett Allen"
-        c1i4 = "Spencer Dinwiddie"
+        # Very Hard category
+        c1_name = "Lowest FG% this Season"
+        c1i1 = "Jordan Hawkins"
+        c1i2 = "Scoot Henderson"
+        c1i3 = "Alec Burks"
+        c1i4 = "Royce O'Neal"
 
-        c2_name = "2017 Draft Top 4 Picks"
-        c2i1 = "Markelle Fultz"
-        c2i2 = "Lonzo Ball"
-        c2i3 = "Jayson Tatum"
-        c2i4 = "Josh Jackson"
+        # Hard category
+        c2_name = "Former Suns Still in the League"
+        c2i1 = "Chris Paul"
+        c2i2 = "Jock Landale"
+        c2i3 = "Kelly Oubre"
+        c2i4 = "Richaun Holmes"
 
-        c3_name = "Total Steals Leaders"
-        c3i1 = "Shai Gilgeous-Alexander"
-        c3i2 = "De'Aaron Fox"
-        c3i3 = "Matisse Thybulle"
-        c3i4 = "Kawhi Leonard"
+        # Medium category
+        c3_name = "Players Traded by the Pistons"
+        c3i1 = "Marvin Bagley"
+        c3i2 = "Andre Drummond"
+        c3i3 = "Tobias Harris"
+        c3i4 = "Saddiq Bey"
 
-        c4_name = "Players with the most points in any NBA game"
-        c4i1 = "Wilt Chamberlain"
-        c4i2 = "Kobe Bryant"
-        c4i3 = "Luka Doncic"
-        c4i4 = "David Thompson"
+        # Easy category 
+        c4_name = "Last 4 #2 Overall Picks"
+        c4i1 = "Chet Holmgren"
+        c4i2 = "Jalen Green"
+        c4i3 = "Brandon Miller"
+        c4i4 = "James Wiseman"
 
         cat1 = c1_name+"!!"+c1i1+"!!"+c1i2+"!!"+c1i3+"!!"+c1i4
         cat2 = c2_name+"!!"+c2i1+"!!"+c2i2+"!!"+c2i3+"!!"+c2i4

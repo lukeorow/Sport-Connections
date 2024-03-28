@@ -97,6 +97,7 @@ document.querySelectorAll('.rectangle').forEach(rectangle => {
         console.log("oi");
         numAnimationsRemoved++;
         if (numAnimationsRemoved == 4) {
+            console.log("checking")
             checkSelection();
             numAnimationsRemoved = 0;
         }
