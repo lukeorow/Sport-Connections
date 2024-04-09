@@ -3,38 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFL Connections</title>
+    <title>Sport Selection</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1 class = "title">NBA Connections</h1>
-    <div class="header-container">
-        <button id="how-to-play-button">How to Play</button>
-        <h3>Create four groups of four!</h3>
-        <!-- <button id="previous-games-button" class="dropbtn">Previous Games</button> 
-        <select id="games-dropdown" class = "dropdown-content"></select> -->
-        <div class="dropdown">
-            <button class="dropbtn" id="previous-games-button">Previous Games</button>
-            <div class="dropdownn-content" id="games-dropdown-content">
-            
-            </div>
-        </div>
+    <h1 class="purples">Sport Connections</h1>
+    <h3 class="mint">Select a Sport!</h3>
+    <div class="sport-selection">
+        <a href="/football"><img src="/static/images/football.jpg" alt="Football" class="sport-image"></a>
+        <a href="/basketball"><img src="/static/images/basketball.jpg" alt="Basketball" class="sport-image"></a>
+        <a href="/hockey"><img src="/static/images/hockey.jpg" alt="Hockey" class="sport-image"></a>
+        <a href="/baseball"><img src="/static/images/baseball.jpg" alt="Baseball" class="sport-image"></a>
     </div>
-    <div class="grid-container" id="grid-container">
-        {% for item, category in all_items %}
-            <div class="rectangle" data-category="{{ category }}" data-selected="false">{{  item  }}</div>
-        {% endfor %}
-    </div>
-    <div id="mistakes-counter">Mistakes Remaining:</div>
-    <div class = "circle-container">
-        <div class="circle" id="circle1"></div>
-        <div class="circle" id="circle2"></div>
-        <div class="circle" id="circle3"></div>
-        <div class="circle" id="circle4"></div>
-    </div>
-    <button id="shuffle-button">Shuffle</button>
-    <button id="deselect-button" id="deselect-button" disabled>Deselect all</button>
-    <button type="submit" id="submit-button" disabled>Submit</button>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

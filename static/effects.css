@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+  
+  body {
+    font-family: 'Rocher';
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 50px;
+    margin: 0px;
+    align-self: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+  h3 {
+    margin-top: -30px;
+    font-size: 20px;
+  }
+  
+  @font-palette-values --Grays {
+    font-family: Rocher;
+    base-palette: 9;
+  }
+  
+  @font-palette-values --Purples {
+    font-family: Rocher;
+    base-palette: 6;
+  }
+  
+  @font-palette-values --Mint {
+    font-family: Rocher;
+    base-palette: 7;
+  }
+  @font-palette-values --Green {
+    font-family: Rocher;
+    base-palette: 2;
+  }
+  @font-palette-values --Blue {
+    font-family: Rocher;
+    base-palette: 4;
+  }
+  
+  .grays {
+    font-palette: --Grays;
+  }
+  
+  .purples {
+    font-palette: --Purples;
+  }
+  
+  .mint {
+    font-palette: --Mint;
+  }
+  .green {
+    font-palette: --Green;
+  }
+  
+  .blue {
+    font-palette: --Blue;
+}
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Connections</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='basketball.css') }}">
+</head>
+<body>
+    <h1 class = "title">NBA Connections</h1>
+    <div class="header-container">
+        <button id="how-to-play-button">How to Play</button>
+        <h3 class="blue">Create four groups of four!</h3>
+        <!-- <button id="previous-games-button" class="dropbtn">Previous Games</button> 
+        <select id="games-dropdown" class = "dropdown-content"></select> -->
+        <div class="dropdown">
+            <button class="dropbtn" id="previous-games-button">Previous Games</button>
+            <div class="dropdownn-content" id="games-dropdown-content">
+            
+            </div>
+        </div>
+    </div>
+    <div class="grid-container" id="grid-container">
+        {% for item, category in all_items %}
+            <div class="rectangle" data-category="{{ category }}" data-selected="false">{{  item  }}</div>
+        {% endfor %}
+    </div>
+    <div class="mistakes-counter">Mistakes Remaining:</div>
+    <div class = "circle-container">
+        <div class="circle" id="circle1"></div>
+        <div class="circle" id="circle2"></div>
+        <div class="circle" id="circle3"></div>
+        <div class="circle" id="circle4"></div>
+    </div>
+    <button id="shuffle-button">Shuffle</button>
+    <button id="deselect-button" id="deselect-button" disabled>Deselect all</button>
+    <button type="submit" id="submit-button" disabled>Submit</button>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
