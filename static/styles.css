@@ -40,6 +40,83 @@ h3 {
     margin-right: 50px;
     margin-bottom: -30px;
 }
+.sport-selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sport-select {
+    margin: 10px; /* Adjust spacing between images */
+    transition: transform 0.3s ease-in-out; /* Apply transition effect to transform property */
+}
+
+.sport-link:hover {
+    transform: scale(1.1) translateY(-5px); /* Enlarge the image and move it slightly upwards */
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes whirl {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes kick {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.basketball:hover {
+    animation: bounce 0.6s ease-in-out infinite; /* Apply the bouncing animation */
+}
+
+.hockey:hover img {
+    animation: slide 0.6s ease-in-out infinite;
+}
+
+.baseball:hover img {
+    animation: whirl 2s linear infinite;
+}
+
+.football:hover img {
+    animation: kick 0.7s ease-in-out infinite;
+}
+
+
 
 .grid-container {
     display: grid;

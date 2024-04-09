@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sport Selection</title>
+    <title>Sport Connections - Home</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="/static/images/favicon.png" type="image/x-icon">
 </head>
 <body>
     <h1 class="purples">Sport Connections</h1>
     <h3 class="mint">Select a Sport!</h3>
     <div class="sport-selection">
-        <a href="/football"><img src="/static/images/football.jpg" alt="Football" class="sport-image"></a>
-        <a href="/basketball"><img src="/static/images/basketball.jpg" alt="Basketball" class="sport-image"></a>
-        <a href="/hockey"><img src="/static/images/hockey.jpg" alt="Hockey" class="sport-image"></a>
-        <a href="/baseball"><img src="/static/images/baseball.jpg" alt="Baseball" class="sport-image"></a>
+        <a href="/football" class="sport-link football"><img src="/static/images/football.jpg" alt="Football" class="sport-image"></a>
+        <a href="/basketball" class="sport-link basketball"><img src="/static/images/basketball.jpg" alt="Basketball" class="sport-image"></a>
+        <a href="/hockey" class="sport-link hockey"><img src="/static/images/hockey.jpg" alt="Hockey" class="sport-image"></a>
+        <a href="/baseball" class="sport-link baseball"><img src="/static/images/baseball.jpg" alt="Baseball" class="sport-image"></a>
     </div>
 </body>
 </html>
